@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.myntra.com</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="/Common Files/image/favicon.png">
+    <!-- ALL CSS LINK -->
+    <link rel="stylesheet" href="/Common Files/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <style>
+        #section_1 img {
+            width: unset;
+        }
+
+        ol>li>span {
+            color: #009999;
+            font-weight: 700;
+        }
+
+        /* Default light mode */
+        body {
+            background-color: #ffffff;
+            color: #029d9d;
+        }
+
+        header, nav, #flatdiscount {
+            background-color: #fff;
+            color: #028787;
+        }
+
+        /* Dark mode */
+        body.dark-mode {
+            background-color:#25253c;
+            color: #018282;
+        }
+
+        body.dark-mode header,
+        body.dark-mode nav,
+        body.dark-mode #flatdiscount {
+            background-color: #25253c;
+            color: #029090;
+        }
+
+        #theme-toggle {
+            background: #d4efef;
+            border: 1px solid currentColor;
+            border-radius: 0.5px;
+            padding: 2px 2px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="flatdiscount">
+        <i id="sidePanel" class="fa-solid fa-caret-left"></i>
+        <h1>FLAT ₹300 OFF</h1>
+    </div>
+
+    <!-- HEADER MENU SECTION -->
+    <header>
+        <div id="logo">
+            <img src="/Common Files/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage">
+        </div>
+        <ul id="nav_bar">
+            <li id="megamenu_container"><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="#">home & living</a></li>
+            <li><a href="#">beauty</a></li>
+            <li id="studio"><a href="#">studio</a><span>new</span></li>
+        </ul>
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+                <div id="drop">
+                    <a href="/Profile/profile.html" class="dropList">login</a>
+                    <a href="/Profile/signup.html" class="dropList">sign up</a>
+                </div>
+
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+        <!-- TOGGLE MENU -->
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="../Homepages/menHomePage.html">men</a>
+                    <a href="../Homepages/womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="#">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>
+            </div>
+        </div>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/28/4ac3be4b-f02c-4106-8dc9-be1898a81def1648463267842-Desktop-Banner-----1920x504.jpg"
+                    alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/8f1a79c7-3f11-4608-9f31-30a03a606cb41647537798522-SS22-DesktopBanners-Unisex.jpg"
+                    alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/1439d458-3f9b-4a49-830c-a47a126bb9311647456798699-Roadster_Desk_Banner.jpg"
+                    alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/52df3f93-8d0f-412d-b416-fc665706199d1647456798690-Casual-Shoes_Dk.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <h1>DEALS OF THE DAY</h1>
+    <div id="deals">
+
+    </div>
+    <h1>BEST OF MYNTRA EXCLUSIVE BRANDS</h1>
+    <div id="best">
+    </div>
+    <h1>TOP PICKS</h1>
+    <div id="top">
+    </div>
+    <h1>CATEGORIES TO BAG</h1>
+    <div id="categories">
+    </div>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            
+            // Save the current theme preference to local storage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Load the saved theme preference on page load
+        window.onload = function() {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+<script src="deals.js"></script>
+<script src="/Common Files/headerMenu.js"></script>
+<script src="/Common Files/corousel.js"></script>
+<script src="../Common Files/hyperlinks.js"></script>
